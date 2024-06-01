@@ -1,5 +1,7 @@
 # .bashrc
 
+##------REMEMBER TO SOURCE THE FILE AFTER CHANGES ARE MADE!
+
 ##-------------------
 #bash-prompt-generator.com
 PROMPT_COMMAND='PS1_CMD1=$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)';
