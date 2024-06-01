@@ -9,3 +9,5 @@ PS1='\[\e[92m\]\u\[\e[0m\]@\[\e[38;5;214m\]${PS1_CMD1}\[\e[0m\] \[\e[38;5;139m\]
 ##-------ALIASING------------
 alias compose='docker-compose'
 alias ..='cd ..'
+alias dpsa="docker ps -a --format \"table {{.Image}}\t{{.ID}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}\""
+alias dps="docker ps -a --format \"table {{.Image}}\t{{.ID}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}\""
