@@ -1,0 +1,7 @@
+FROM opensuse/tumbleweed:latest
+RUN zypper install -y neovim npm git
+RUN npm i -g npm@10.8.1
+RUN npm i -g bun n
+RUN git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+RUN zypper install -y  gcc clang  zig
+COPY nvim root/.config/nvim
