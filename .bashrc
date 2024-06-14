@@ -13,3 +13,4 @@ alias compose='docker-compose'
 alias ..='cd ..'
 alias dpsa="docker ps -a --format \"table {{.Image}}\t{{.ID}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}\""
 alias dps="docker ps -a --format \"table {{.Image}}\t{{.ID}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}\""
+alias fab='git branch -r | grep -v "\->" | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done'
