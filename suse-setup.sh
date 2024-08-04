@@ -1,6 +1,5 @@
 #!/bin/bash
 sudo zypper install -y docker docker-compose git neovim gcc clang  zig npm tmux
-git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 git clone https://github.com/xxCosta/nvim.git ~/.config/nvim
-wget https://raw.githubusercontent.com/xxCosta/dotcon/main/.bashrc
-source .bashrc
+wget https://raw.githubusercontent.com/xxCosta/dotcon/main/.bashrc -P ~
+source ~/.bashrc
