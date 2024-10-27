@@ -14,5 +14,7 @@ read -p 'email: ' email
 
 git config --global user.email $email
 git config --global user.name $username
+git config --global init.defaultBranch main
+
 
 echo 'bless ur link up styl'
